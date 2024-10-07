@@ -1,0 +1,64 @@
+.education {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.degree-title {
+    font-size: 24px;
+}
+
+.education-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.gif-side {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif-side img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.education-side {
+    flex-basis: 65%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow only on education-side */
+    margin-left: 20px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.courses-grid li {
+    margin-bottom: 5px;
+}
+
+.degree-info p {
+    margin: 0; /* Remove default margin to reduce spacing */
+    line-height: 1.2; /* Minimal space between lines */
+}
+
+.degree-sub-info {
+    display: flex;
+    justify-content: space-between; /* Aligns content to the left and right */
+    align-items: flex-start; /* Ensures vertical alignment */
+    margin: 0;
+}
