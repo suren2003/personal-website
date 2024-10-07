@@ -39,5 +39,7 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
-  }
+  },
+
+  "homepage": "http://suren2003.github.io/personal-website"
 }
