@@ -1,0 +1,122 @@
+/* Container that holds the experience boxes */
+.experience-container {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    max-width: 1200px;      /* Set a max width for the content */
+    margin: 0 auto;         /* Centers the container */
+    padding: 20px;          /* Adds space around the container */
+}
+
+/* Each individual experience box */
+.experience-box {
+    background-color: #fff;  /* White background for a clean look */
+    border-radius: 12px;     /* Rounded corners */
+    border: 1px solid #e0e0e0; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;           /* Padding inside the box */
+    margin-bottom: 20px;     /* Space between the boxes */
+    width: 100%;             /* Ensures each box takes up full width */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for each box */
+.experience-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Title styling for each experience box */
+.experience-box h2 {
+    font-size: 24px;        /* Size of the title */
+    margin-bottom: 8px;     /* Space below the title */
+    color: #333;            /* Darker color for the title */
+}
+
+/* Text styling for the company and dates */
+.experience-box p {
+    font-size: 16px;        /* Normal font size for text */
+    line-height: 1.6;       /* Better readability */
+    color: #555;            /* Softer text color */
+}
+
+/* Title for the entire Experience section */
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;            /* Same darker color for consistency */
+}
+
+/* Modal overlay to cover the background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures the modal is on top */
+}
+
+/* Modal content styling for a larger size */
+.modal-content {
+    background-color: #fff;
+    padding: 40px; /* Increased padding */
+    border-radius: 12px;
+    max-width: 900px; /* Increased maximum width */
+    width: 100%; /* Full width within the max width */
+    height: auto; /* Adjusts height automatically based on content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    position: relative;
+    overflow-y: auto; /* Adds scroll if content exceeds viewport */
+    max-height: 80vh; /* Keeps the modal within the viewport height */
+}
+
+/* Close button styling */
+.modal-content button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #e04848;
+}
+
+/* Brief section styling */
+.brief {
+    position: relative;          /* Allows positioning of "Brief:" */
+    padding-left: 50px;         /* Indent the entire paragraph except "Brief:" */
+    text-indent: 0;              /* Ensure no extra indent on first line */
+    margin-bottom: 10px;        /* Space below the brief */
+}
+
+.brief::before {
+    content: "Brief: ";          /* Insert the "Brief:" text */
+    font-weight: bold;           /* Bold the "Brief:" text */
+    position: absolute;          /* Position it exactly at the start */
+    left: 0;                     /* Align to the left side */
+}
+
+/* Tech label styling */
+.tech-label {
+    font-weight: bold;            /* Make the label bold */
+}
+
+/* Tech section styling */
+.tech {
+    line-height: 1.5;            /* Adjust line height for better readability */
+    margin-bottom: 20px;         /* Space below the tech line */
+}
+
+
+
