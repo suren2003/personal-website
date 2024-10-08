@@ -11,7 +11,7 @@ const Experience = () => {
             title: "5G Baseband Software Developer Intern",
             company: "Ericsson",
             dates: "May 2024 - Present",
-            brief: "My focus was put on developing an internal tool, baseband software, and an testing framework to emulate hardware testing.",
+            brief: "This role was a very big and interesting change for myself. I went from working on test automation on web development to embedded programming and wireless communications. My focus was put on developing an internal tool, baseband software, and an testing framework to emulate hardware testing.",
             tech: "C/C++, Python, YAML, 5G NR, Agile, Git",
             resume: (
                 <ul>
