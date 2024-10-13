@@ -6,9 +6,7 @@ const About = () => {
     <div className="about-container">
       <h2>About Me</h2>
       <p>
-        Hello! I'm Suren Kulasegaram, a passionate software developer with a keen interest in creating innovative solutions
-        and improving user experiences. I have experience in various programming languages and technologies, including 
-        JavaScript, React, and more. In my free time, I enjoy exploring new tech trends and working on personal projects.
+        Placeholder yapping n that
       </p>
       <p>
         My goal is to continuously learn and grow in my field, contributing to meaningful projects and collaborating with
