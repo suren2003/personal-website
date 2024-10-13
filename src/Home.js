@@ -1,8 +1,15 @@
 import React from 'react';
-// import './Resume.css'; // Include custom CSS for height control 
+import './Home.css';
 
-const Home = () => {
-  return <div>Welcome to the Home Page!</div>;
+const Home = ({ handleScroll }) => {
+  return (
+    <div className="home-container">
+      <h1>Welcome to My Portfolio</h1>
+      <button onClick={() => handleScroll('About')} className="scroll-button">
+        Scroll to About
+      </button>
+    </div>
+  );
 };
 
 export default Home;

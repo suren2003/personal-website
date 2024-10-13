@@ -1,16 +1,16 @@
 import React from 'react';
+import './NavBar.css'; // Include your CSS for the navbar
 
-const NavBar = ({ setActivePage }) => {
+const NavBar = ({ handleScroll, navbarVisible }) => {
   return (
-    <nav>
-      <button onClick={() => setActivePage('Home')}>Home</button>
-      <button onClick={() => setActivePage('About')}>About</button>
-      <button onClick={() => setActivePage('Experience')}>Experience</button>
-      <button onClick={() => setActivePage('Education')}>Education</button>
-      <button onClick={() => setActivePage('Projects')}>Projects</button>
-      <button onClick={() => setActivePage('Resume')}>Resume</button>
-
-    </nav>
+    <div className={`navbar ${navbarVisible ? 'visible' : ''}`}>
+      <button onClick={() => handleScroll('Home')}>Home</button>
+      <button onClick={() => handleScroll('About')}>About</button>
+      <button onClick={() => handleScroll('Experience')}>Experience</button>
+      <button onClick={() => handleScroll('Education')}>Education</button>
+      <button onClick={() => handleScroll('Projects')}>Projects</button>
+      <button onClick={() => handleScroll('Socials')}>Resume + Socials</button>
+    </div>
   );
 };
 

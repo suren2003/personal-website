@@ -4,7 +4,7 @@ import './Education.css'; // Include custom CSS for height control
 const Education = () => {
     return (
       <div className="education">
-        <h1 className="title">Education</h1>
+        <h2 className="title">Education</h2>
         <div className="education-section">
           <div className="gif-side">
             <img src={`${process.env.PUBLIC_URL}/education.gif`} alt="Education GIF" />

@@ -1,0 +1,15 @@
+.about-container {
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-container h2 {
+    margin-bottom: 15px;
+}
+
+.about-container p {
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improve readability */
+}

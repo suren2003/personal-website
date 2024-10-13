@@ -1,0 +1,95 @@
+/* Container for the entire Socials section */
+.socials-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+/* Styling for the header */
+.socials-header {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Container for the logo images */
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between logos */
+  margin-bottom: 20px; /* Space below the logos */
+}
+
+/* Basic styling for logo images */
+.logo {
+  width: 50px; /* Adjust width to your preference */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for logos */
+.logo:hover {
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+/* Container for the buttons */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between buttons */
+}
+
+/* Basic styling for the buttons */
+.social-button {
+  background-color: #0073b1; /* LinkedIn blue color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the buttons */
+.social-button:hover {
+  background-color: #005f8d;
+}
+
+/* Additional styling for GitHub button */
+.social-button:nth-child(3) {
+  background-color: #333; /* GitHub black color */
+}
+
+.social-button:nth-child(3):hover {
+  background-color: #555;
+}
+
+/* Title styling */
+.title {
+  text-align: center;          /* Centers the text horizontally */
+  font-size: 32px;            /* Sets the font size */
+  font-weight: bold;          /* Makes the text bold */
+  margin-bottom: 40px;        /* Adds space below the title */
+  color: #333;                /* Sets a dark gray color for the text */
+  text-transform: uppercase;   /* Transforms text to uppercase for emphasis */
+  letter-spacing: 1px;        /* Adds space between letters for readability */
+}
+
+/* Optional: Add responsive styling */
+@media (max-width: 768px) {
+  .title {
+      font-size: 24px;        /* Smaller font size for smaller screens */
+      margin-bottom: 30px;    /* Adjust margin for smaller screens */
+  }
+
+  .logo {
+      width: 40px; /* Smaller logo size for smaller screens */
+  }
+
+  .social-button {
+      font-size: 14px; /* Smaller font size for buttons */
+      padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}

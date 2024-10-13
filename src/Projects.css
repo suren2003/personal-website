@@ -1,0 +1,79 @@
+/* Container that holds the project boxes */
+.projects-container {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    max-width: 1200px;     /* Set a max width for the content */
+    margin: 0 auto;        /* Centers the container */
+    padding: 20px;         /* Adds space around the container */
+}
+
+/* Each individual project box */
+.project-box {
+    background-color: #fff;  /* White background for a clean look */
+    border-radius: 12px;     /* Rounded corners */
+    border: 1px solid #e0e0e0; /* Light border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;           /* Padding inside the box */
+    margin-bottom: 20px;     /* Space between the boxes */
+    width: 100%;             /* Ensures each box takes up full width */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover effect for each box */
+.project-box:hover {
+    transform: translateY(-10px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Title styling for each project */
+.project-title {
+    font-size: 24px;        /* Size of the title */
+    margin-bottom: 8px;     /* Space below the title */
+    color: #333;            /* Darker color for the title */
+}
+
+/* Text styling for the project description */
+.project-description {
+    font-size: 16px;        /* Normal font size for text */
+    line-height: 1.6;       /* Better readability */
+    color: #555;            /* Softer text color */
+}
+
+/* Button styling for viewing projects */
+.view-project-button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Space above the button */
+}
+
+.view-project-button:hover {
+    background-color: #005f8d;
+}
+
+/* Tech label styling */
+.tech-label {
+    font-weight: bold;            /* Make the label bold */
+}
+
+.title {
+    text-align: center;          /* Centers the text horizontally */
+    font-size: 32px;            /* Sets the font size */
+    font-weight: bold;          /* Makes the text bold */
+    margin-bottom: 40px;        /* Adds space below the title */
+    color: #333;                /* Sets a dark gray color for the text */
+    text-transform: uppercase;   /* Transforms text to uppercase for emphasis */
+    letter-spacing: 1px;        /* Adds space between letters for readability */
+}
+
+/* Optional: Add responsive styling */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;        /* Smaller font size for smaller screens */
+        margin-bottom: 30px;    /* Adjust margin for smaller screens */
+    }
+}

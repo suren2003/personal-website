@@ -1,0 +1,83 @@
+/* Enable smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base styles for sections */
+.section {
+    padding: 20px; /* Adjust padding for all sections */
+}
+
+/* Home page styling */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for home page */
+    background-color: #f0f0f0;
+}
+
+.scroll-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+    background-color: #005f8d;
+}
+
+/* Navbar - initially hidden when on the home section */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 999;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(-20px); /* Start slightly above */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition for opacity and position */
+}
+
+.navbar.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide down to original position */
+}
+
+.navbar button {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #005f8d;
+}
+
+/* Add margin-top to sections except for the home section */
+#About,
+#Experience,
+#Education,
+#Projects,
+#Socials {
+    margin-top: 100px; /* This should match the height of your navbar */
+}
+
+
