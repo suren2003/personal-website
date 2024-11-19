@@ -22,7 +22,7 @@ const Projects = () => {
     ];
 
     return (
-        <section id="Projects" className="section">
+        <div class="project-container">
             <h2 className="title">Projects</h2>
             <div className="projects-container">
                 {projects.map((project, index) => (
@@ -34,7 +34,7 @@ const Projects = () => {
                     </div>
                 ))}
             </div>
-        </section>
+        </div>
     );
 };
 

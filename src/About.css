@@ -1,15 +1,78 @@
-.about-container {
-    padding: 20px;
-    background-color: #fff; /* White background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+/* About Container */
+.about {
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
-.about-container h2 {
-    margin-bottom: 15px;
+.title {
+  text-align: center; /* Centers the text horizontally */
+  font-size: 32px; /* Font size for the title */
+  font-weight: bold; /* Makes the title bold */
+  margin-bottom: 40px; /* Adds space below the title */
+  color: #333; /* Dark gray color */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 1px; /* Adds space between letters */
 }
 
-.about-container p {
-    margin-bottom: 10px;
-    line-height: 1.6; /* Improve readability */
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.image-side {
+  flex-basis: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-side img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-side {
+  flex-basis: 65%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  margin-left: 20px;
+}
+
+/* Contact List Inline */
+.contact-list {
+  display: flex; /* Use flexbox to arrange items in a row */
+  gap: 20px; /* Space between items */
+  list-style-type: none; /* Remove default list styling */
+  padding-left: 0; /* Remove default padding */
+}
+
+.contact-list li {
+  font-size: 16px; /* Font size for list items */
+  color: #555; /* Soft gray color */
+}
+
+/* Optional: Add responsive styling */
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px; /* Smaller font size for smaller screens */
+    margin-bottom: 30px; /* Adjust margin */
+  }
+
+  .about-section {
+    flex-direction: column; /* Stack sections vertically on smaller screens */
+  }
+
+  .image-side {
+    flex-basis: 100%; /* Image takes full width */
+    margin-bottom: 20px; /* Space between image and text */
+  }
+
+  .about-side {
+    flex-basis: 100%; /* Text takes full width */
+  }
 }

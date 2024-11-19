@@ -68,28 +68,28 @@
 
 /* Title styling */
 .title {
-  text-align: center;          /* Centers the text horizontally */
-  font-size: 32px;            /* Sets the font size */
-  font-weight: bold;          /* Makes the text bold */
-  margin-bottom: 40px;        /* Adds space below the title */
-  color: #333;                /* Sets a dark gray color for the text */
-  text-transform: uppercase;   /* Transforms text to uppercase for emphasis */
-  letter-spacing: 1px;        /* Adds space between letters for readability */
+  text-align: center; /* Centers the text horizontally */
+  font-size: 32px; /* Sets the font size */
+  font-weight: bold; /* Makes the text bold */
+  margin-bottom: 40px; /* Adds space below the title */
+  color: #333; /* Sets a dark gray color for the text */
+  text-transform: uppercase; /* Transforms text to uppercase for emphasis */
+  letter-spacing: 1px; /* Adds space between letters for readability */
 }
 
 /* Optional: Add responsive styling */
 @media (max-width: 768px) {
   .title {
-      font-size: 24px;        /* Smaller font size for smaller screens */
-      margin-bottom: 30px;    /* Adjust margin for smaller screens */
+    font-size: 24px; /* Smaller font size for smaller screens */
+    margin-bottom: 30px; /* Adjust margin for smaller screens */
   }
 
   .logo {
-      width: 40px; /* Smaller logo size for smaller screens */
+    width: 40px; /* Smaller logo size for smaller screens */
   }
 
   .social-button {
-      font-size: 14px; /* Smaller font size for buttons */
-      padding: 8px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Smaller font size for buttons */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
   }
 }

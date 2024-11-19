@@ -1,18 +1,35 @@
-import React from 'react';
-import './About.css'; // Optional: include styles for your About component
+import React from "react";
+import "./About.css"; // Optional: include styles for your About component
 
 const About = () => {
   return (
-    <div className="about-container">
-      <h2>About Me</h2>
-      <p>
-        Placeholder yapping n that
-      </p>
-      <p>
-        My goal is to continuously learn and grow in my field, contributing to meaningful projects and collaborating with
-        like-minded individuals. I believe in the power of technology to make a positive impact on society and strive to
-        be part of that change.
-      </p>
+    <div className="about">
+      <h2 className="title">About Me</h2>
+      <div className="about-section">
+        <div className="image-side">
+          <img
+            src={`${process.env.PUBLIC_URL}/selfie.jpg`}
+            alt="pic of me :)"
+          />
+        </div>
+        <div className="about-side">
+          <p>
+            Hi, I'm Suren! I'm a developer with experience in embedded systems
+            and test automation, and I'm currently looking to transition into
+            full-stack development. I love solving complex problems and creating
+            solutions that work well in real-world applications. When I'm not
+            coding, I stay active with sports like hockey, soccer, and
+            basketball. These sports have taught me the value of teamwork, quick
+            thinking, and persistence—skills that I bring into my development
+            work. I thrive in environments that challenge me and am always
+            excited to tackle new problems.
+          </p>
+          <ul className="contact-list">
+            <li>Computer Systems Engineer at Carleton University</li>
+            <li>Email: surenkulasegaram@gmail.com</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

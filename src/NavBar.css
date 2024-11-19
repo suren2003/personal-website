@@ -1,24 +1,23 @@
 /* Make the navbar sticky at the top of the page */
 .navbar {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    z-index: 1000; /* Ensures navbar is above all content */
-  }
-  
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Ensures navbar is above all content */
+}
+
 /* Style the buttons */
 .navbar button {
-    background-color: #555;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
-  
