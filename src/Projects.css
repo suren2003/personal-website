@@ -77,3 +77,19 @@
     margin-bottom: 30px; /* Adjust margin for smaller screens */
   }
 }
+
+/* Container for the logo images */
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between logos */
+  margin-bottom: 20px; /* Space below the logos */
+}
+
+/* Basic styling for logo images */
+.logo {
+  width: 50px; /* Adjust width to your preference */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth hover effect */
+}
