@@ -29,37 +29,73 @@ const Projects = () => {
     {
       title: "Task Management Discord Bot",
       description:
-        "This project creates a Discord bot using Node.js to integrate Notion and Discord APIs",
+        "This project creates a Discord bot using Node.js to integrate Notion and Discord APIs.",
       technologies: "JavaScript, Node.js, Notion & Discord API",
       details: (
         <ul>
-          <li>
-            Fetches and parses data from Notion's API (calendar database).
-          </li>
+          <li>Fetches and parses data from Notion's API (calendar database)</li>
           <li>
             Sends task notifications to a designated Discord channel using
-            Discord's API.
+            Discord's API
           </li>
           <li>
             Automates weekly task updates using the node-cron library for
-            precise scheduling.
+            precise scheduling
           </li>
         </ul>
       ),
       githubURL: "https://github.com/suren2003/Discord-Bot",
     },
     {
-      title: "Project Title 3",
+      title: "Dataset Analyzer",
       description:
-        "A Django-based web application for managing a library. It includes user authentication and a searchable catalog.",
-      technologies: "Python, Django",
+        "The project contains a single program which allows the user to load a Google Books dataset (CSV file) and then analyze the dataset in a variety of different ways.",
+      technologies: "Python",
       details: (
         <ul>
-          <li>Created a backend system using Django</li>
-          <li>Implemented user authentication and catalog search</li>
-          <li>Integrated with a PostgreSQL database</li>
+          <li>Group project from coursework, where I was team lead</li>
+          <li>It allows the user to add or remove books from the dataset</li>
+          <li>
+            It allows the user to search the dataset by book title, rating,
+            author, publisher, category, category and title, or category and
+            rating
+          </li>
+          <li>
+            It allows the user to view the books in the dataset sorted by page
+            count (ascending) or rating (ascending or descending), or sorted
+            alphabetically by title, publisher name, or category
+          </li>
+          <li>
+            It allows the user to view the number of books in a category, the
+            categories containing books written by a specified author, or the
+            categories that a specified book falls into
+          </li>
         </ul>
       ),
+      githubURL:
+        "https://github.com/suren2003/Interactive-Google-Books-Dataset-Analyzer",
+    },
+    {
+      title: "Space Invaders",
+      description:
+        "Recreation of Space Invaders, but the main character is Naruto and throws out his kunais and the ninjas.",
+      technologies: "Python, pygame",
+      details: (
+        <ul>
+          <li>
+            Designed and implemented game mechanics including dynamic difficulty
+            scaling, collision detection, and score tracking
+          </li>
+          <li>
+            Features simple controls: arrow keys to move and spacebar to shoot
+          </li>
+          <li>
+            It’s a fun little project to learn and experiment with game
+            development basics!
+          </li>
+        </ul>
+      ),
+      githubURL: "https://github.com/suren2003/Space-Invader-Game",
     },
   ];
 
