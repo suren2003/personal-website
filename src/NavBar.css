@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   z-index: 1000; /* Ensures navbar is above all content */
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  width: 100%;
 }
 
 /* Style the buttons */
@@ -20,4 +22,61 @@
   font-size: 16px;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+}
+
+/* Hamburger menu style */
+.navbar .hamburger {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 10px; /* Space above the hamburger icon */
+}
+
+/* Style each line of the hamburger */
+.navbar .hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Adjust the spacing between lines by increasing the gap */
+.navbar .hamburger div:not(:last-child) {
+  margin-bottom: 6px; /* Adjust the gap between lines */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Center all items */
+  }
+
+  /* Hide buttons by default on mobile */
+  .navbar button {
+    display: none;
+  }
+
+  /* Show the hamburger menu */
+  .navbar .hamburger {
+    display: flex; /* Show the hamburger button */
+  }
+
+  /* Display the menu items when the hamburger is clicked */
+  .navbar.mobile-menu-active button {
+    display: block;
+    width: 80%; /* Make buttons smaller than the screen size */
+    max-width: 300px; /* Limit the max width of the buttons */
+    margin: 10px auto; /* Center the buttons with space between */
+    text-align: center;
+    padding: 10px 0; /* Adjust padding */
+    font-size: 18px; /* Adjust font size */
+  }
 }

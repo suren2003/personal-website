@@ -1,34 +1,36 @@
 .education {
   max-width: 1200px;
   margin: 40px auto;
+  padding: 0 20px; /* Add padding for consistent spacing */
 }
 
+/* Title styling */
 .title {
-  text-align: center; /* Centers the text horizontally */
-  font-size: 32px; /* Sets the font size */
-  font-weight: bold; /* Makes the text bold */
-  margin-bottom: 40px; /* Adds space below the title */
-  color: #333; /* Sets a dark gray color for the text */
-  text-transform: uppercase; /* Transforms text to uppercase for emphasis */
-  letter-spacing: 1px; /* Adds space between letters for readability */
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Optional: Add responsive styling */
 @media (max-width: 768px) {
   .title {
-    font-size: 24px; /* Smaller font size for smaller screens */
-    margin-bottom: 30px; /* Adjust margin for smaller screens */
+    font-size: 24px;
+    margin-bottom: 30px;
   }
-}
-
-.degree-title {
-  font-size: 24px;
 }
 
 .education-section {
   display: flex;
+  flex-direction: row; /* Arrange items in a horizontal row by default */
   justify-content: space-between;
   align-items: flex-start;
+  gap: 20px; /* Space between GIF and text */
+  margin: 0 auto; /* Center the section */
+  max-width: 100%;
 }
 
 .gif-side {
@@ -49,8 +51,25 @@
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow only on education-side */
-  margin-left: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stack elements vertically on smaller screens */
+@media (max-width: 768px) {
+  .education-section {
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Reduce gap between stacked items */
+  }
+
+  .gif-side,
+  .education-side {
+    flex-basis: auto; /* Allow items to take full width */
+  }
+
+  .education-side {
+    margin-left: 0; /* Remove left margin for stacked layout */
+    margin-right: 0; /* Remove right margin for stacked layout */
+  }
 }
 
 .courses-grid {
@@ -65,14 +84,18 @@
   margin-bottom: 5px;
 }
 
+.degree-title {
+  font-size: 24px;
+}
+
 .degree-info p {
-  margin: 0; /* Remove default margin to reduce spacing */
-  line-height: 1.2; /* Minimal space between lines */
+  margin: 0;
+  line-height: 1.2;
 }
 
 .degree-sub-info {
   display: flex;
-  justify-content: space-between; /* Aligns content to the left and right */
-  align-items: flex-start; /* Ensures vertical alignment */
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 0;
 }

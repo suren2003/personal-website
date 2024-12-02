@@ -1,95 +1,92 @@
-/* Container that holds the project boxes */
 .projects-container {
   display: flex;
-  flex-direction: column; /* Stack boxes vertically */
-  max-width: 1200px; /* Set a max width for the content */
-  margin: 0 auto; /* Centers the container */
-  padding: 20px; /* Adds space around the container */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center the entire column vertically */
+  align-items: center; /* Align items horizontally in the center */
+  gap: 20px; /* Space between project boxes */
+  margin: 0 auto;
+  max-width: 1200px; /* Matches max-width of other components */
+  padding: 20px;
 }
 
-/* Each individual project box */
 .project-box {
-  background-color: #fff; /* White background for a clean look */
-  border-radius: 12px; /* Rounded corners */
-  border: 1px solid #e0e0e0; /* Light border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  padding: 20px; /* Padding inside the box */
-  margin-bottom: 20px; /* Space between the boxes */
-  width: 100%; /* Ensures each box takes up full width */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%; /* Ensure boxes take full width */
+  max-width: 600px; /* Limit the width of each project box */
+  text-align: left; /* Left-align the content inside each box */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Hover effect for each box */
 .project-box:hover {
-  transform: translateY(-10px); /* Lift the box slightly on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Title styling for each project */
-.project-title {
-  font-size: 24px; /* Size of the title */
-  margin-bottom: 8px; /* Space below the title */
-  color: #333; /* Darker color for the title */
-}
-
-/* Text styling for the project description */
-.project-description {
-  font-size: 16px; /* Normal font size for text */
-  line-height: 1.6; /* Better readability */
-  color: #555; /* Softer text color */
-}
-
-/* Button styling for viewing projects */
-.view-project-button {
-  background-color: #0073b1;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 10px; /* Space above the button */
-}
-
-.view-project-button:hover {
-  background-color: #005f8d;
-}
-
-/* Tech label styling */
-.tech-label {
-  font-weight: bold; /* Make the label bold */
-}
-
-.title {
-  text-align: center; /* Centers the text horizontally */
-  font-size: 32px; /* Sets the font size */
-  font-weight: bold; /* Makes the text bold */
-  margin-bottom: 40px; /* Adds space below the title */
-  color: #333; /* Sets a dark gray color for the text */
-  text-transform: uppercase; /* Transforms text to uppercase for emphasis */
-  letter-spacing: 1px; /* Adds space between letters for readability */
-}
-
-/* Optional: Add responsive styling */
 @media (max-width: 768px) {
-  .title {
-    font-size: 24px; /* Smaller font size for smaller screens */
-    margin-bottom: 30px; /* Adjust margin for smaller screens */
+  .project-box {
+    width: 100%; /* Ensure boxes take full width on small screens */
+    max-width: 100%; /* Remove max-width constraint for mobile */
   }
 }
 
-/* Container for the logo images */
-.logos-container {
+.project-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.tech-label {
+  font-weight: bold;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px; /* Space between logos */
-  margin-bottom: 20px; /* Space below the logos */
+  z-index: 1000;
 }
 
-/* Basic styling for logo images */
-.logo {
-  width: 50px; /* Adjust width to your preference */
-  height: auto; /* Maintain aspect ratio */
-  transition: transform 0.3s; /* Smooth hover effect */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-content .description {
+  margin: 10px 0;
+}
+
+.modal-content .logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.modal-content .logo {
+  width: 40px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.modal-content .logo:hover {
+  transform: scale(1.1);
 }

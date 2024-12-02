@@ -2,8 +2,10 @@
 .about {
   max-width: 1200px;
   margin: 40px auto;
+  padding: 0 20px; /* Added padding for better spacing on smaller screens */
 }
 
+/* Title */
 .title {
   text-align: center; /* Centers the text horizontally */
   font-size: 32px; /* Font size for the title */
@@ -18,7 +20,8 @@
 .about-section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center; /* Ensures both image and text are vertically aligned at the center on larger screens */
+  gap: 20px; /* Adds space between image and text */
 }
 
 .image-side {
@@ -41,6 +44,7 @@
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
   margin-left: 20px;
+  flex-grow: 1; /* Allow it to expand when image shrinks */
 }
 
 /* Contact List Inline */
@@ -63,8 +67,10 @@
     margin-bottom: 30px; /* Adjust margin */
   }
 
+  /* Stack sections vertically on smaller screens */
   .about-section {
-    flex-direction: column; /* Stack sections vertically on smaller screens */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center the content horizontally */
   }
 
   .image-side {
@@ -74,5 +80,17 @@
 
   .about-side {
     flex-basis: 100%; /* Text takes full width */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .contact-list {
+    flex-direction: column; /* Stack contact items vertically */
+    align-items: center; /* Center contact items */
+  }
+
+  .contact-list li {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+    text-align: center; /* Center the contact list items */
+    margin-bottom: 10px; /* Add spacing between items */
   }
 }

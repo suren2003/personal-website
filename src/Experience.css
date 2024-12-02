@@ -2,41 +2,43 @@
 .experience-container {
   display: flex;
   flex-direction: column; /* Stack boxes vertically */
-  max-width: 1200px; /* Set a max width for the content */
+  max-width: 1200px;
   margin: 0 auto; /* Centers the container */
-  padding: 20px; /* Adds space around the container */
+  padding: 20px;
+  width: 100%; /* Ensures full width */
 }
 
 /* Each individual experience box */
 .experience-box {
-  background-color: #fff; /* White background for a clean look */
-  border-radius: 12px; /* Rounded corners */
-  border: 1px solid #e0e0e0; /* Light border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  padding: 20px; /* Padding inside the box */
-  margin-bottom: 20px; /* Space between the boxes */
-  width: 100%; /* Ensures each box takes up full width */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 20px; /* Equal margin on left and right */
+  width: calc(100% - 40px); /* Full width minus the margins */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
 }
 
 /* Hover effect for each box */
 .experience-box:hover {
-  transform: translateY(-10px); /* Lift the box slightly on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Title styling for each experience box */
 .experience-box h2 {
-  font-size: 24px; /* Size of the title */
-  margin-bottom: 8px; /* Space below the title */
-  color: #333; /* Darker color for the title */
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #333;
 }
 
 /* Text styling for the company and dates */
 .experience-box p {
-  font-size: 16px; /* Normal font size for text */
-  line-height: 1.6; /* Better readability */
-  color: #555; /* Softer text color */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
 }
 
 /* Title for the entire Experience section */
@@ -44,7 +46,7 @@
   text-align: center;
   font-size: 32px;
   margin-bottom: 40px;
-  color: #333; /* Same darker color for consistency */
+  color: #333;
 }
 
 /* Modal overlay to cover the background */
@@ -58,21 +60,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensures the modal is on top */
+  z-index: 1000;
 }
 
 /* Modal content styling for a larger size */
 .modal-content {
   background-color: #fff;
-  padding: 40px; /* Increased padding */
+  padding: 40px;
   border-radius: 12px;
-  max-width: 900px; /* Increased maximum width */
-  width: 100%; /* Full width within the max width */
-  height: auto; /* Adjusts height automatically based on content */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   position: relative;
-  overflow-y: auto; /* Adds scroll if content exceeds viewport */
-  max-height: 80vh; /* Keeps the modal within the viewport height */
+  overflow-y: auto;
+  max-height: 80vh;
 }
 
 /* Close button styling */
@@ -94,44 +96,72 @@
 
 /* Brief section styling */
 .brief {
-  position: relative; /* Allows positioning of "Brief:" */
-  padding-left: 50px; /* Indent the entire paragraph except "Brief:" */
-  text-indent: 0; /* Ensure no extra indent on first line */
-  margin-bottom: 10px; /* Space below the brief */
+  position: relative;
+  padding-left: 50px;
+  text-indent: 0;
+  margin-bottom: 10px;
 }
 
 .brief::before {
-  content: "Brief: "; /* Insert the "Brief:" text */
-  font-weight: bold; /* Bold the "Brief:" text */
-  position: absolute; /* Position it exactly at the start */
-  left: 0; /* Align to the left side */
+  content: "Brief: ";
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
 
 /* Tech label styling */
 .tech-label {
-  font-weight: bold; /* Make the label bold */
+  font-weight: bold;
 }
 
 /* Tech section styling */
 .tech {
-  line-height: 1.5; /* Adjust line height for better readability */
-  margin-bottom: 20px; /* Space below the tech line */
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
-.title {
-  text-align: center; /* Centers the text horizontally */
-  font-size: 32px; /* Sets the font size */
-  font-weight: bold; /* Makes the text bold */
-  margin-bottom: 40px; /* Adds space below the title */
-  color: #333; /* Sets a dark gray color for the text */
-  text-transform: uppercase; /* Transforms text to uppercase for emphasis */
-  letter-spacing: 1px; /* Adds space between letters for readability */
-}
-
-/* Optional: Add responsive styling */
+/* Optional: Add responsive styling for mobile */
 @media (max-width: 768px) {
+  /* Title adjustments */
   .title {
-    font-size: 24px; /* Smaller font size for smaller screens */
-    margin-bottom: 30px; /* Adjust margin for smaller screens */
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  /* Experience Box adjustments */
+  .experience-box {
+    padding: 15px; /* Slightly smaller padding */
+    margin: 10px 10px; /* Adjusted margin for mobile */
+    width: calc(100% - 20px); /* Full width minus the margin */
+  }
+
+  .experience-box h2 {
+    font-size: 20px; /* Adjust title size for mobile */
+  }
+
+  .experience-box p {
+    font-size: 14px; /* Adjust paragraph size for mobile */
+  }
+
+  /* Modal Content adjustments */
+  .modal-content {
+    padding: 20px; /* Reduced padding for mobile */
+    max-width: 80%; /* Allows modal to be more flexible on smaller screens */
+    width: 100%; /* Full width within max width */
+  }
+
+  /* Close button adjustments */
+  .modal-content button {
+    padding: 4px 8px; /* Smaller button for mobile */
+  }
+
+  /* Responsive experience container */
+  .experience-container {
+    padding: 10px; /* Reduced padding for mobile */
+  }
+
+  /* Modal overlay adjustments */
+  .modal-overlay {
+    padding: 10px; /* Adjust padding to avoid close button being too close to edges */
   }
 }
