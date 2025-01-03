@@ -8,7 +8,7 @@ const Experience = () => {
   // Data for your experiences with details as a list
   const experienceData = [
     {
-      title: "5G Baseband Software Developer Intern",
+      title: "5G Baseband Embedded Software Developer Intern",
       company: "Ericsson",
       dates: "May 2024 - Present",
       brief:
@@ -31,7 +31,7 @@ const Experience = () => {
       ),
     },
     {
-      title: "Software Test Specialist Intern",
+      title: "Test Automation Software Developer Intern",
       company: "Nokia",
       dates: "Jan 2024 - April 2024",
       brief:
@@ -53,7 +53,7 @@ const Experience = () => {
       ),
     },
     {
-      title: "Software Test Specialist Intern",
+      title: "Test Automation Software Developer Intern",
       company: "Nokia",
       dates: "May 2023 - Sept 2023",
       brief:
