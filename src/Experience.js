@@ -23,9 +23,9 @@ const Experience = () => {
             case generations
           </li>
           <li>
-            Optimized product code by refactoring complex C/C++ sections flagged
-            by CodeScene and vigorously testing solutions to ensure code quality
-            without breaking the current system
+            Developed and customized a test framework by porting it from a
+            legacy repository, adapting it to ensure compatibility, seamless
+            integration, and successful compilation within the new codebase
           </li>
         </ul>
       ),
@@ -40,10 +40,9 @@ const Experience = () => {
       resume: (
         <ul>
           <li>
-            Enhanced test coverage of web app by migrating 13 test suites by
-            redeveloping and updating test suites to be compatible with newly
-            transitioned React based web app using JavaScript, Node.js and
-            MochaJS
+            Enhanced test coverage of a React-based web app by migrating and
+            redeveloping 13 full-stack test suites, ensuring compatibility with
+            the new framework using JavaScript, Node.js, MochaJS, and REST APIs
           </li>
           <li>
             Verified the successful implementation of bug fixes by conducting
@@ -62,8 +61,10 @@ const Experience = () => {
       resume: (
         <ul>
           <li>
-            Contributed to the test automation and regression testing of Nokia’s
-            NSP web application using JavaScript, Node.js, and MochaJS
+            Developed and enhanced front-end and back-end test automation
+            frameworks for regression testing of Nokia’s NSP web application,
+            leveraging JavaScript, Node.js, MochaJS, and REST APIs to improve
+            test reliability and efficiency
           </li>
           <li>
             Enhanced product quality and stability by resolving 10+ product
