@@ -8,6 +8,36 @@ const Experience = () => {
   // Data for your experiences with details as a list
   const experienceData = [
     {
+      title: "Software/Test Developer Intern",
+      company: "Nokia",
+      dates: "May 2025 - Aug 2025",
+      brief:
+        "This is my third term with Nokia, but in a completely different department. This term, I was apart of the SAR 7705 router team working on test automation for the router's security features. I specifically worked on and learned about the AAA process (authentication, authorization and accounting) and RADIUS and TACACS+ protocols.",
+      tech: "TCL, Python, RADIUS, TACACS+, Git, Linux",
+      resume: (
+        <ul>
+          <li>
+            Owned end-to-end feature validation for two security features on SAR
+            7705 routers: built test plans, presented reviews, implemented Tcl
+            test procedures, executed regressions, and verified results
+            independently
+          </li>
+          <li>
+            Developed 90+ automated sub-tests for TACACS+ access permission and
+            Statistics features, covering multi-protocol access (Telnet, SSH,
+            FTP, Console, SNMP) and TACACS+/RADIUS user VSA, login,
+            authorization, and accounting statistics, improving coverage and
+            closing gaps in legacy suites
+          </li>
+          <li>
+            Improved productivity and test scalability by scripting Python
+            automation to register tests across 150+ suites and group runs under
+            compatible testbeds for efficient regression execution
+          </li>
+        </ul>
+      ),
+    },
+    {
       title: "5G Baseband Embedded Software Developer Intern",
       company: "Ericsson",
       dates: "May 2024 - Present",
