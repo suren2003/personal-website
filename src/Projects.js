@@ -8,6 +8,84 @@ const Projects = () => {
   // Data for projects
   const projects = [
     {
+      title: "Lego Sorting Machine",
+      description:
+        "An automated system that sorts Lego pieces by color using computer vision, conveyor mechanics, and dynamic bin sorting. The project combines hardware integration with full-stack software to create a simple, user-friendly, and cost-effective solution that transforms a traditionally manual task into an efficient automated workflow.",
+      technologies:
+        "Python, OpenCV, Flask, SQLite, React, Node.js, gRPC, Firebase, Raspberry Pi",
+      details: (
+        <ul>
+          <li>5 person team project for SYSC 3010</li>
+          <li>
+            Architected and developed a fully automated color-based Lego sorting
+            system, integrating computer vision (OpenCV), conveyor mechanics,
+            and a dynamic bin system to transform a traditionally manual process
+            into an efficient, scalable workflow.
+          </li>
+          <li>
+            Built a user-centric full-stack interface with Flask (Python,
+            SQLite) and React/Node.js, enabling real-time system configuration,
+            operational control, and live inventory tracking of sorted Lego
+            pieces.
+          </li>
+          <li>
+            Integrated Firebase for persistent, cloud-backed inventory tracking,
+            ensuring session-to-session consistency and enabling future
+            scalability to multi-device deployments.
+          </li>
+          <li>
+            <a
+              href="https://youtu.be/Qx0oTBa_ln0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Demo Video
+            </a>
+          </li>
+        </ul>
+      ),
+
+      githubURL: "https://github.com/suren2003/SYSC3010-Lego-Sorting-System",
+    },
+    {
+      title: "Concurrent Multithreaded Elevator Control System",
+      description:
+        "A sophisticated, real-time concurrent elevator control system built in C++, featuring modular subsystems—Scheduler, Elevator, Floor, GUI—that communicate through UDP messaging, manage passenger capacity, process dynamic ride requests, and run across distributed processes with logging and fault handling.",
+      technologies:
+        "C++, UDP (DatagramSockets), Multithreading, FSM, Real-time Simulation, Unit Testing",
+      details: (
+        <ul>
+          <li>4 person team project for SYSC 3303</li>
+          <li>
+            Engineered a modular, multithreaded elevator control system with
+            distinct subsystems (Scheduler, Elevator, Floor, GUI) communicating
+            via UDP DatagramSockets, enabling distributed deployment and
+            inter-process coordination.
+          </li>
+          <li>
+            Added real-time features—passenger capacity limits, request retry
+            logic, and timing instrumentation—to simulate realistic elevator
+            behavior, fault scenarios, and dynamic load handling.
+          </li>
+          <li>
+            Developed comprehensive unit testing across core modules and
+            visualization diagrams (state machines, sequence, timing) to ensure
+            correctness, maintainability, and clear system documentation.
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=dq5pUf0XNOk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Demo Video
+            </a>
+          </li>
+        </ul>
+      ),
+      githubURL: "https://github.com/suren2003/SYSC3303-Elevator",
+    },
+    {
       title: "Operating System Scheduler",
       description:
         "This is an simplified emulation of the Linux Completely Fair Share scheduling policy developed in C. This scheduler provides a simple visual to demonstrate how the Completely Fair Scheduler works. We use a text file that we read from to simulate all the processes we have and need to work with.",
